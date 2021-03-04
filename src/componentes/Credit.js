@@ -1,5 +1,5 @@
 import React from "react";
-import { Col, Row, Jumbotron, Image  } from "react-bootstrap";
+import { Col, Row, Jumbotron, Image, Container  } from "react-bootstrap";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCreditCard, faMobile, faShoppingCart, faWallet } from '@fortawesome/free-solid-svg-icons';
@@ -11,7 +11,8 @@ import "./Credit.scss";
 
 const Credit = () => (
 <Jumbotron className="bg-white" >
-    <Row lg = { 1 }>
+    <Container>
+    <Row>
         <Col>
             <h2 className="credit__title fw-light">Cartão de crédito</h2>
 
@@ -37,6 +38,7 @@ const Credit = () => (
             
         </Col>
     </Row>
+    </Container>
 </Jumbotron>
 
 );
