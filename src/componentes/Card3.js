@@ -5,7 +5,7 @@ import imageCard from "../assets/card03.png";
 import "./card.scss";
 
 const Cards3 = () => (
-  <Container className="container__card">
+  <Container className="container__card d-md-none">
     <Card style={{ width: "21.5rem" }} >
       <Card.Img variant="top" src={imageCard} />
       <Card.Body>
