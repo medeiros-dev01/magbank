@@ -14,19 +14,19 @@ const Credit = () => (
     <Container>
     <Row>
         <Col>
-            <h2 className="credit__title fw-light">Cartão de crédito</h2>
+            <h2 className="credit__title fw-bold">Cartão de crédito</h2>
 
             
-            <p className="text-black-40"><FontAwesomeIcon className="text-danger mx-2 mt-4 text-center" icon={faCreditCard} />Crédito pessoal</p>
+            <p className="text-black-50"><FontAwesomeIcon className="text-danger mx-2 mt-4 text-center" icon={faCreditCard} />Crédito pessoal</p>
 
            
-            <p className=" credit__icon-app text-black-40"><FontAwesomeIcon className="text-danger mx-2 " icon={faMobile} />APP</p>
+            <p className=" credit__icon-app text-black-50"><FontAwesomeIcon className="text-danger mx-2 " icon={faMobile} />APP</p>
 
            
-            <p className="text-black-40"><FontAwesomeIcon className="text-danger mx-2" icon={faShoppingCart} />Pagamentos Online</p>
+            <p className="text-black-50"><FontAwesomeIcon className="text-danger mx-2" icon={faShoppingCart} />Pagamentos Online</p>
 
             
-            <p className="text-black-40"><FontAwesomeIcon className="text-danger mx-2" icon={faWallet} />Carteira Digital</p>
+            <p className="text-black-50"><FontAwesomeIcon className="text-danger mx-2" icon={faWallet} />Carteira Digital</p>
         </Col>
     </Row>
 

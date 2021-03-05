@@ -1,10 +1,10 @@
 import React from "react";
 import { Card, Button, Container } from "react-bootstrap";
-import imageCard from "../assets/card01.png";
+import imageCard from "../assets/card02.png";
 
 import "./card.scss";
 
-const Cards = () => (
+const Cards2 = () => (
   <Container className="container__card">
     <Card style={{ width: "21.5rem" }}>
       <Card.Img variant="top" src={imageCard} />
@@ -20,4 +20,4 @@ const Cards = () => (
 
 );
 
-export default Cards;
+export default Cards2;
