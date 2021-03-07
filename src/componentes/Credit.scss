@@ -2,6 +2,12 @@
   margin-top: -2rem;
   color: #8c00b2;
   font-weight: lighter;
+
+  @media screen and (min-width: 770px) {
+    position: absolute;
+    top: 5rem;
+    font-size: 3rem;
+  }
 }
 
 .credit__image {
@@ -10,4 +16,8 @@
 
 .credit__icon-app {
   margin-left: 0.35rem;
+}
+
+.credit__col-icons {
+  margin-top: 10rem;
 }
