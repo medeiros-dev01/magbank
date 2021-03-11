@@ -1,30 +1,27 @@
 import React from "react";
 import Navbar from "./componentes/Navbar";
 import Hero from "./componentes/Hero";
-import Credit from "./componentes/Credit";
-import Card from "./componentes/Card";
-import Card2 from "./componentes/Card2";
-import Card3 from "./componentes/Card3";
-import Button from "./componentes/Button";
-import CardDesktop from "./componentes/CardsDesktop";
+import CreditCard from "./componentes/CreditCard";
+import CardList from "./componentes/CardList";
+import CenteredButton from "./componentes/CenteredButton";
 
-
+import Institutional from "./componentes/Institutional";
 
 import "./App.scss";
 
-const App = () => (
-  
-    <div className="App"> 
-      <Navbar />
-      <Hero />
-      <Credit />
-      <Card />
-      <Card2 />
-      <Card3 />
-      <CardDesktop />
-      <Button />
-    </div>
-  );
+import posts from "./data/posts";
 
+const App = () => (
+  <div className="App">
+    <Navbar />
+    <Hero />
+    <CreditCard />
+    <CardList posts={posts} />
+
+    <CenteredButton>Abra sua conta</CenteredButton>
+
+    <Institutional />
+  </div>
+);
 
 export default App;
