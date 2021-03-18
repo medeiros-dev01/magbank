@@ -6,6 +6,7 @@ import CardList from "./componentes/CardList";
 import CenteredButton from "./componentes/CenteredButton";
 import Institutional from "./componentes/Institutional";
 import Faq from "./componentes/Faq";
+import Footer from "./componentes/Footer";
 
 import "./App.scss";
 
@@ -22,6 +23,7 @@ const App = () => (
 
     <Institutional />
     <Faq />
+    <Footer />
   </div>
 );
 
