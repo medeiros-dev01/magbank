@@ -2,8 +2,8 @@ import React from "react";
 import { Container, Row, Col, Image } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  fafacebookSquare,
-  fatwitter,
+  faFacebookSquare,
+  faTwitter,
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
 
@@ -11,7 +11,7 @@ import logo from "../assets/magbank.png";
 import applestore from "../assets/applestore.png";
 import googleplay from "../assets/googleplay.png";
 
-import "./Footer.scss"
+import "./Footer.scss";
 
 const Footer = () => (
   <footer className="footer">
@@ -22,19 +22,37 @@ const Footer = () => (
         </Col>
         <Col xs={12} lg={4}>
           <Image src={applestore} />
-          <Image src={googleplay} className="ml-2"/>
+          <Image src={googleplay} className="ml-2" />
         </Col>
-        <Col xs={12} lg={2} className="d-flex align-items-center justify-content-center">
-            <a
-                href="http://facebook.com/"
-                target="_black"
-                rel="noopener noreferrer"
-                >
-                    <FontAwesomeIcon icon={fafacebookSquare} color="#7c7c7c" size="2x" />
-            </a>
-          
-          <FontAwesomeIcon icon={fatwitter} color="#7c7c7c" size="2x" className="ml-2"/>
-          <FontAwesomeIcon icon={faYoutube} color="#7c7c7c" size="2x" className="ml-2"/>
+        <Col
+          xs={12}
+          lg={2}
+          className="d-flex align-items-center justify-content-center"
+        >
+          <a
+            href="http://facebook.com/"
+            target="_black"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon
+              icon={faFacebookSquare}
+              color="#7c7c7c"
+              size="2x"
+            />
+          </a>
+
+          <FontAwesomeIcon
+            icon={faTwitter}
+            color="#7c7c7c"
+            size="2x"
+            className="ml-2"
+          />
+          <FontAwesomeIcon
+            icon={faYoutube}
+            color="#7c7c7c"
+            size="2x"
+            className="ml-2"
+          />
         </Col>
       </Row>
     </Container>
