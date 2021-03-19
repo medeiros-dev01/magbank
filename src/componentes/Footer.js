@@ -20,8 +20,8 @@ const Footer = () => (
         <Col xs={12} lg={6} className="text-lg-left">
           <Image src={logo} />
         </Col>
-        <Col xs={12} lg={4}>
-          <Image src={applestore} />
+        <Col xs={12} lg={4} className="my-5 my-lg-0">
+          <Image className="pr-4" src={applestore} />
           <Image src={googleplay} className="ml-2" />
         </Col>
         <Col
@@ -45,13 +45,13 @@ const Footer = () => (
             icon={faTwitter}
             color="#7c7c7c"
             size="2x"
-            className="ml-2"
+            className="ml-4"
           />
           <FontAwesomeIcon
             icon={faYoutube}
             color="#7c7c7c"
             size="2x"
-            className="ml-2"
+            className="ml-4"
           />
         </Col>
       </Row>
