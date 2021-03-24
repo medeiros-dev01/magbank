@@ -1,5 +1,5 @@
 import React from "react";
-import { link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { Row, Col, Form, Button, Image } from "react-bootstrap";
 import logo from "../assets/logo-login.png";
 
@@ -14,17 +14,20 @@ const Login = () => (
           <Form>
             <Form>
               <Form.Group controlId="formBasicEmail">
-                <Form.Label>Número da Conta</Form.Label>
+                <Form.Label className="lead"><strong>Número da Conta</strong></Form.Label>
                 <Form.Control type="number" />
               </Form.Group>
 
               <Form.Group controlId="formBasicPassword">
-                <Form.Label>Senha</Form.Label>
+                <Form.Label className="lead"><strong>Senha</strong></Form.Label>
                 <Form.Control type="password" placeholder="Password" />
               </Form.Group>
-              <Button variant="success" type="submit">
+              <Link to="/dashboard">
+              <Button className="mt-3" variant="success" type="submit">
                 Criar Conta
               </Button>
+
+              </Link>
             </Form>
           </Form>
         </Col>
