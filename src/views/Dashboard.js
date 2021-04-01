@@ -1,16 +1,18 @@
-import React, { useState} from "react";
+import React, { useState } from "react";
 import { Switch, Route, Link } from "react-router-dom";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircle, faUser } from "@fortawesome/free-solid-svg-icons";
 
 import AccountBalance from "../componentes/AccountBalance";
+import AccountPayments from "../componentes/AccountPayments";
+import AccountHistory from "../componentes/AccountHistory";
 
 import "./Dashboard.scss";
 
 const Dashboard = ({ className = false }) => {
-  const [ activeLink, setActiveLink ] = useState(0); 
-  
+  const [activeLink, setActiveLink] = useState(0);
+
   const links = [
     { text: "Minha Conta", path: "/dashboard", exact: true },
     { text: "Pagamentos", path: "/dashboard/payments" },
@@ -32,6 +34,11 @@ const Dashboard = ({ className = false }) => {
       { date: "22/08", description: "NETFLIX 012345", value: "30,00" },
       { date: "15/08", description: "FARMÁCIA 121254", value: "350,00" },
     ],
+
+    history: [
+      "histórico 1",
+      "histórico 2"
+    ]
   };
 
   return (
@@ -56,10 +63,17 @@ const Dashboard = ({ className = false }) => {
             </Col>
           </Row>
 
-          {links.map(({text, path, exact }, key) => (
-            <Link className='dashboard__link' to={path} exact={exact ? exact : false} key={key}>
+          {links.map(({ text, path, exact }, key) => (
+            <Link
+              className="dashboard__link"
+              to={path}
+              exact={exact ? exact : false}
+              key={key}
+            >
               <Button
-                className={`dashboard__button text-left ${ key === activeLink ? "dashboard__button--active" : ''}`}
+                className={`dashboard__button text-left ${
+                  key === activeLink ? "dashboard__button--active" : ""
+                }`}
                 variant="link"
                 size="lg"
                 block
@@ -73,10 +87,10 @@ const Dashboard = ({ className = false }) => {
 
         <Switch>
           <Route path="/dashboard/history">
-            <h2>Extratos</h2>
+            <AccountHistory data={data} />
           </Route>
           <Route path="/dashboard/payments">
-            <h2>Pagamentos</h2>
+            <AccountPayments />
           </Route>
           <Route path="/dashboard">
             <AccountBalance data={data} />

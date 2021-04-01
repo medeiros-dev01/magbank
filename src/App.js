@@ -24,7 +24,7 @@ const App = () => {
           <Dashboard />
         </Route>
         <Route path="/">
-            <Home handleClick={() => setShowModal(false)} />
+          <Home handleClick={() => setShowModal(false)} />
         </Route>
       </Switch>
 
