@@ -5,7 +5,7 @@ import logo from "../assets/logo-login.png";
 
 import "./Login.scss";
 
-const Login = ({ auth }) => {
+const Login = ({ auth, text }) => {
 
   const [name, setName] = useState();
   const [account, setAccount] = useState();
@@ -46,7 +46,7 @@ const Login = ({ auth }) => {
                 </Form.Group>
                 
                   <Button className="mt-3" variant="success" type="submit" onClick={handleSubmit}>
-                    Criar Conta
+                    Entrar
                   </Button>
                 
               </Form>
